@@ -35,11 +35,11 @@ else #goes here if you did not choose option "2"
       
 		elif [ $QUALITY -eq 2 ]; then 
 			echo "Low Quality Video"
-			yt-dlp --write-annotations --write-auto-sub --add-metadata --write-sub --sub-lang en --embed-sub -f '18/worstvideo+worstaudio' $URL
+			yt-dlp --write-annotations --write-auto-sub --add-metadata --sub-lang en --embed-sub -f '18/worstvideo+worstaudio' $URL
 		
     else
 			echo "High Quality Video"
-			yt-dlp --write-annotations --write-auto-sub --add-metadata --write-sub --sub-lang en --embed-sub -f '302+bestaudio/298+bestaudio/22/best' $URL
+			yt-dlp --write-annotations --write-auto-sub --add-metadata --sub-lang en --embed-sub -f '302+bestaudio/298+bestaudio/22/best' $URL
 		fi 
 	fi 
 fi
